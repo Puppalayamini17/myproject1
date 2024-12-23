@@ -1,0 +1,26 @@
+{% extends 'nav.html' %}
+{% load static %}
+{% block title %}
+sheryians
+{% endblock title %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'request.css' %}">
+{% endblock css %}
+{%% block data %}
+{% load static %}
+    <div id="request_form">
+        <h2 id="request_heading">RequestcallBack</h2>
+        <h4>Fill the form below to request a callback <br>from our team</h4>
+        <label for="Name">Name</label><br>
+        <select name="Phone" id="phone" placeholder="Phone" class="request_inputs">
+            <option>India</option>
+            <option>USA</option>
+            <option>China</option>
+            <option>Australia</option>
+            <option>Japan</option>
+        </select><br>
+        <label for="" id="date_time">Select Date and Time</label><br>
+        <input type="date,time" value="20-12-2024 13:30" class="request_inputs"><br>
+        <input type="submit" style="background-color: aqua; width: 20vw;">
+    </div>
+{% endblock data %}

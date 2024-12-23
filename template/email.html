@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'email.css' %}">
+</head>
+<body>
+    {% block data %}
+    <div class="contain">
+        <div id="heading">
+            <h1 id="signin_form">SignIn</h1>
+            <a href="{% url 'app:signin' %}" id="phone_anchor">Phone</a>
+            <a href="{% url 'app:email' %}" id="email_anchor">Email</a>
+        </div>
+        <form>
+            <div class="form_group">
+                <label for="phone" required><p>Email</p></label>
+                <input type="text" class="phone" placeholder="Enter your Email">
+                <label for="password" required><p>Password</p></label>
+                <input type="password" class="phone" placeholder="Enter your password here">
+            </div>
+            <div class="or">Or</div><br><br>
+            <button class="google_btn">
+                Continue with Google
+            </button>
+            <br><br>
+            <button class="google_btn">Create a New Account</button>
+        </form>
+    </div>
+    {% endblock data %}
+</body>
+</html> 

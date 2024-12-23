@@ -1,0 +1,130 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+
+        {% endblock title %}
+    </title>
+    {% block css %}
+    <link rel="stylesheet" href="{% static 'data.css' %}">
+    {% endblock css %}
+</head>
+<body>
+    {% block body %}
+    {% endblock body %}
+    <nav>
+        <div id="sub">
+            <a href="{% url 'app:home' %}" id="name">Sheryians coding school</a>
+        </div>
+        <div id="sub1">
+            <a class="name" href="{% url 'app:home' %}">Home</a>
+            <a class="name" href="{% url 'app:courses' %}">Courses</a>
+            <a class="name" href="{% url 'app:bootcamp' %}">BootCamp(kodr)</a>
+            <a class="name" href="{% url 'app:requestcallback' %}">RequestCallBack</a>
+            <a class="name" href="{% url 'app:signin %}" id="sign">SignIn</a>
+        </div>
+    </nav>
+    <!-- <section id="content"></section> -->
+    <div id="content">
+        <h1>We only
+            <span id="col">teach</span>
+            <br>what we are really
+            <br>
+            really
+            <span>good</span>
+            at
+        </h1>
+        <!-- <div id="side_text"></div> -->
+        <pre>
+            Get ready to <span id="col">accelerate your 
+                carrer</span> with customarized courses
+                and leave your mark in the teach
+                industry
+        </pre>
+        <a href="Check courses-make an Impact" id="course"></a>
+    </div>
+    <br>
+    <br><br>
+    <div id="bottom">
+        <div>
+            <h2>25k+</h2>
+            <p>Students taught</p>
+        </div>
+        <div>
+            <h2>20k+</h2>
+            <p>Instructors</p>
+        </div>
+        <div>
+            <h2>431k+</h2>
+            <p>youtube subs.</p>
+        </div>
+    </div>
+    <br><br><br>
+    <div id="midd">
+        <div id="top">
+            we do whatever it takes to help you 
+            <br>
+            <span id="col">understand the concepts</span>
+            <br><br><br>
+            <iframe width="614" height="346" src="" frameborder="0" title="you are  not yet ready|placements|open source"></iframe>
+            <div id="end">
+                <p>explore free learning</p>
+            </div>
+        </div>
+        <section id="cost">
+            <div id="top">
+                <p>courses offered</p>
+            </div>
+        </section>
+        <div id="content1">
+            <div class="bott">
+                <img class="image" src="" alt="">
+                <div class="con"><h3>Front-end Domination:<p>create anything with code</p></h3>
+                    <p style="width:5vw;height:3vh;background-color: black;border-radius: 3px;">HINDI</p><br>
+                    <span style="color:green;">black friday sale</span>
+                    <div class="left">$499 <del>$9999</del>
+                    <div class="right">50% off</div></div>
+                </div>
+                <br>
+                <div style="width: 20vw;height: 5vh;background-color: aqua;text-align: center;border-radius: 5px;"><h3>view details</h3></div>
+            </div>
+            <div class="bott">
+                <img class="image" src="" alt="">
+                <div class="con"><h3>Back-end Domination:<p>create Efficient Back-End</p></h3>
+                    <p style="width:5vw;height:3vh;background-color: black;border-radius: 3px;">HINDI</p><br>
+                    <span style="color:green;">Limited Time Discount</span>
+                    <div class="left">$5999 <del>$11999</del>
+                    <div class="right">50% off</div></div>
+                </div>
+                <br>
+                <div style="width: 20vw;height: 5vh;background-color: aqua;text-align: center;border-radius: 5px;"><h3>view details</h3></div>
+                <div class="bott">
+                    <img class="image" src="" alt="">
+                    <div class="con"><h3>Aptitude & Reasoning for:<p>Campus Placements</p></h3>
+                        <p style="width:5vw;height:3vh;background-color: black;border-radius: 3px;">ENGLISH</p><br>
+                        <span style="color:green;">Limited Time Discount</span>
+                        <div class="left">$999 <del>$1500</del>
+                        <div class="right">33% off</div></div>
+                    </div>
+                    <br>
+                    <div style="width: 20vw;height: 5vh;background-color: aqua;text-align: center;border-radius: 5px;"><h3>view details</h3></div>
+            <div class="bott">
+                <img class="image" src="" alt="">
+                <div class="con"><h3>java & dsa domination</h3>
+                    <p style="width:5vw;height:3vh;background-color: black;border-radius: 3px;">ENGLISH</p><br>
+                    <span style="color:green;">limited time discount</span>
+                    <div class="left">$4999 <del>$9999</del>
+                    <div class="right">50% off</div></div>
+                </div>
+                <br>
+                <div style="width: 20vw;height: 5vh;background-color: aqua;text-align: center;border-radius: 5px;"><h3>view details</h3></div>
+            </div>
+        </div>
+        <div id="bott1"></div>
+    </div>
+</body>
+</html>

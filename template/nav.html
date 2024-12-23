@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+
+        {% endblock title %}
+    </title>
+    <link rel="stylesheet" href="{% static 'images/lion.jpg' %}">
+    {% block css %}
+    {% endblock css %}
+    <link rel="stylesheet" href="{% static 'nav.css' %}">
+</head>
+<body>
+    <nav>
+        <div id="sub">
+            <a href="{% url 'app:home' %}">Home</a>
+            <a href="{% url 'app:courses' %}">Courses</a>
+            <a href="{% url 'app:bootcamp' %}">BootCamp(kodr)</a>
+            <a href="{% url 'app:requestcallback' %}">RequestCallBack</a>
+            <a href="{% url 'app:signin %}" id="sign">SignIn</a>
+        </div>
+    </nav>
+    {% block data %}
+    {% endblock data %}
+</body>
+</html>
